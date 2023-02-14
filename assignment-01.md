@@ -86,7 +86,6 @@ E.g., longest_run([2,12,12,8,12,12,12,0,12,1], 12) == 3
 .
 .
 .
-.
 ![image](https://user-images.githubusercontent.com/63222465/218637234-bc8dabac-d5da-462b-9897-0ef683e8b875.png)
 
 
