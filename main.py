@@ -5,8 +5,13 @@ See assignment-01.pdf for details.
 # no imports needed.
 
 def foo(x):
-    ### TODO
-    pass
+    if n ≤ 1:
+        return n
+    else:
+        ra, rb = foo(n-1), foo(n-2)
+        return ra + rb
+
+
 
 def longest_run(mylist, key):
     ### TODO
