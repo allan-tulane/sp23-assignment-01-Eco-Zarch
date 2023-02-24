@@ -46,11 +46,12 @@ let (ra,rb) = (foo (x − 1)) , (foo (x − 2)) in ra + rb end.
         return n
     else:
         ra, rb = foo(n-1), foo(n-2)
-        return ra + rb.
+        return ra + rb
 This Python code defines a function that takes an integer n as input and returns the nth number in the Fibonacci sequence. If n is less than or equal to 1, the function simply returns n. This serves as the base case so that numbers less than 1 do not get included. Otherwise, it recursively computes the (n-1)th and (n-2)th numbers in the sequence using the function, and sums them to get the nth number.
 
 
-3. Parallelism and recursion: Consider the following function: def longest_run(myarray, key)
+3. Parallelism and recursion: Consider the following function: 
+def longest_run(myarray, key)
 """ Input:
 `myarray`: a list of ints
 `key`: an int Return:
@@ -59,8 +60,8 @@ E.g., longest_run([2,12,12,8,12,12,12,0,12,1], 12) == 3
 	3a. (7 pts) First, implement an iterative, sequential version of longest_run in main.py.
 	3b. (4 pts) What is the Work and Span of this implementation?
 .
-.
-.
+.  Work is O(n)
+.  Span is O(n)
 .
 .
 .
@@ -69,8 +70,8 @@ E.g., longest_run([2,12,12,8,12,12,12,0,12,1], 12) == 3
 	3c. (7 pts) Next, implement a longest_run_recursive, a recursive, divide and conquer implementation. This is analogous to our implementation of sum_list_recursive. To do so, you will need to think about how to combine partial solutions from each recursive call. Make use of the provided class Result.
 	3d. (4 pts) What is the Work and Span of this sequential algorithm?
 .
-.
-.
+. Work is O(n log n)
+. Span is O(log n)
 .
 .
 .
@@ -80,12 +81,12 @@ E.g., longest_run([2,12,12,8,12,12,12,0,12,1], 12) == 3
 . .
 • 3e. (4 pts) Assume that we parallelize in a similar way we did with sum_list_recursive. That is, each recursive call spawns a new thread. What is the Work and Span of this algorithm?
 .
+. Work is O(n log n)
+. Span is O(log n)
 .
 .
 .
 .
 .
 .
-![image](https://user-images.githubusercontent.com/63222465/218637234-bc8dabac-d5da-462b-9897-0ef683e8b875.png)
-
-
+![image](https://user-images.githubusercontent.com/63222465/221101764-e5ac4d51-9cec-41e1-ae27-f61c9ce17113.png)
