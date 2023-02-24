@@ -4,7 +4,7 @@ See assignment-01.pdf for details.
 """
 # no imports needed.
 
-def foo(x):
+def foo(n):
     if n ≤ 1:
         return n
     else:
